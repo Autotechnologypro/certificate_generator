@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Certificate Generator</h1>
+        <form id="certificateForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="event">Event/Course:</label>
+            <input type="text" id="event" name="event" required>
+            <button type="submit" onclick="generateCertificate()">Generate Certificate</button>
+        </form>
+        <div id="certificateOutput" class="certificate-preview hidden">
+            <h2>Experience Certificate</h2>
+            <div id="certificateContent"></div>
+            <button id="downloadLink" class="hidden">Download</button>
+          </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+ 
